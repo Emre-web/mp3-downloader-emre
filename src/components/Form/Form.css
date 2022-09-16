@@ -1,0 +1,10 @@
+.form{
+    background-color: blueviolet;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px black;
+    height: 500px;
+}
