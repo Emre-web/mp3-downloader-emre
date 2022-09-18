@@ -7,7 +7,6 @@ import {
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,8 +15,8 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route index element={<Home/>}/>
-                <Route path="login" element={<Login/>}/>
-                <Route path="register" element={<Register/>}/>
+                <Route path="Register" element={<Register/>}/>
+                <Route path="Register/Login" element={<Login/>}/>
             </Routes>
         </BrowserRouter>
     );

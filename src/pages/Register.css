@@ -1,0 +1,25 @@
+
+.custom-button {
+    background-color: black;
+    align-items: center;
+
+}
+
+.custom-button:hover {
+    background-color: black !important;
+}
+.custom-card{
+    box-shadow: 0 0 10px 0 black;
+}
+.hr {
+    color: black;
+    width: 400px;
+    height: 1px;
+}
+.kayitOl{
+    text-align: center;
+}
+.girisYap{
+    text-decoration: none;
+}
+

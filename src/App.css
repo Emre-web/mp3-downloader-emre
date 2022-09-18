@@ -12,10 +12,14 @@ li{
 .link-geri:hover{
     color: crimson;
 }
-.login{
+.SignIn{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: calc(100vh - 60px);
 }
+.SignInTitle{
+    text-align: center;
+}
+
