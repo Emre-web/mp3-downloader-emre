@@ -7,7 +7,7 @@ import "./home.css";
 function Home() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg  custom-navbar">
+            <nav className=" container-fluid navbar navbar-expand-lg  custom-navbar text-white">
                 <div className="container-fluid">
                     <Link to="/"><span className="navbar-brand" style={{color: "white"}}>MP3DOWNLOADER</span></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -19,7 +19,8 @@ function Home() {
                     <div className="position-absolute top-0 end-0" style={{marginRight: "30px", paddingTop: "5px"}}>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
-                                <Link to="Register"><span className="nav-link active" aria-current="page" style={{color: "white"}}>Giriş yap</span></Link>
+                                <Link to="Register"><span className="nav-link active" aria-current="page"
+                                                          style={{color: "white"}}>Giriş yap</span></Link>
                             </div>
                         </div>
                     </div>

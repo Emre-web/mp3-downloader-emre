@@ -2,19 +2,23 @@
     margin-top: 175px;
     text-align: center;
 }
-.custom-navbar{
+
+.custom-navbar {
     text-decoration: none;
     height: 75px;
-    background-color: #d8440c;
+    background-color: coral;
     box-shadow: 0 0 10px 0 black;
 }
-.inputplace{
+
+.inputplace {
     box-shadow: 0 0 10px 0 black;
     border-radius: 50px;
 }
-.inputplace:hover{
+
+.inputplace:hover {
 
 }
+
 .buton {
     background-color: red;
     color: white;
@@ -26,6 +30,7 @@
     color: white;
     background-color: darkgray;
 }
+
 .button {
     text-align: center;
     width: 270px;
@@ -49,11 +54,13 @@
     transition: all .15s ease-in-out;
     color: #0dcaf0;
 }
+
 .button-1:hover {
     box-shadow: 0 0 10px 0 #0dcaf0 inset, 0 0 20px 2px #0dcaf0;
     border: 3px solid #0dcaf0;
 }
-h2{
+
+h2 {
     background-image: linear-gradient(
             to right,
             #0dcaf0,
@@ -69,7 +76,8 @@ h2{
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
 }
-h2:before{
+
+h2:before {
     content: '';
     background: #0dcaf0;
     display: block;
@@ -80,10 +88,12 @@ h2:before{
     height: 3px;
     transition: all 0.3s ease-in-out;
 }
+
 h2:hover {
     background-position: 0;
 }
-:hover::before{
+
+:hover::before {
     width: 100%;
 }
 
@@ -104,7 +114,7 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-a:before{
+a:before {
     content: '';
     background: #0dcaf0;
     display: block;
@@ -120,7 +130,7 @@ a:hover {
     background-position: 0;
 }
 
-a:hover::before{
+a:hover::before {
     width: 100%;
 }
 
