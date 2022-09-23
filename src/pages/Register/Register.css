@@ -1,25 +1,36 @@
+.kayit-ol-container {
+    min-height: 100vh;
+}
 
-.custom-button {
+.kayit-ol-div {
+    max-width: 400px;
+}
+
+.kayit-ol-buton {
     background-color: black;
     align-items: center;
 
 }
 
-.custom-button:hover {
+.kayit-ol-buton:hover {
     background-color: black !important;
 }
-.custom-card{
+
+.custom-card {
     box-shadow: 0 0 10px 0 black;
 }
+
 .hr {
     color: black;
     width: 400px;
     height: 1px;
 }
-.kayitOl{
+
+.kayitOl {
     text-align: center;
 }
-.girisYap{
+
+.girisYap {
     text-decoration: none;
 }
 

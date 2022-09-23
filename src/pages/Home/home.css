@@ -6,24 +6,20 @@
 .custom-navbar {
     text-decoration: none;
     height: 75px;
-    background-color: coral;
+    background-color: #ffcccc;
     box-shadow: 0 0 10px 0 black;
+    font-size: 25px;
 }
 
-.inputplace {
+.input-place {
     box-shadow: 0 0 10px 0 black;
-    border-radius: 50px;
-}
-
-.inputplace:hover {
-
+    border-radius: 10px;
 }
 
 .buton {
     background-color: red;
     color: white;
 }
-
 
 .buton:hover {
     cursor: pointer;
@@ -46,7 +42,7 @@
     display: inline-block;
 }
 
-.button-1 {
+.button-download {
     background-color: transparent;
     border: 3px solid #0dcaf0;
     border-radius: 50px;
@@ -55,7 +51,7 @@
     color: #0dcaf0;
 }
 
-.button-1:hover {
+.button-download:hover {
     box-shadow: 0 0 10px 0 #0dcaf0 inset, 0 0 20px 2px #0dcaf0;
     border: 3px solid #0dcaf0;
 }

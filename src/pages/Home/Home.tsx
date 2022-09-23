@@ -7,9 +7,9 @@ import "./home.css";
 function Home() {
     return (
         <>
-            <nav className=" container-fluid navbar navbar-expand-lg  custom-navbar text-white">
+            <nav className=" container-fluid navbar navbar-expand-lg  custom-navbar">
                 <div className="container-fluid">
-                    <Link to="/"><span className="navbar-brand" style={{color: "white"}}>MP3DOWNLOADER</span></Link>
+                    <Link to="/"><span className="navbar-brand">MP3DOWNLOADER</span></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                             aria-expanded="false"
@@ -19,22 +19,22 @@ function Home() {
                     <div className="position-absolute top-0 end-0" style={{marginRight: "30px", paddingTop: "5px"}}>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
-                                <Link to="Register"><span className="nav-link active" aria-current="page"
-                                                          style={{color: "white"}}>Giriş yap</span></Link>
+                                <Link to="Register"><span className="nav-link active"
+                                                          aria-current="page">Giriş yap</span></Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
             <div className="col-md-7 container-fluid input-area">
-                <h2 className="baslik1">Search keywords or paste link here</h2>
-                <InputGroup className="inputplace" size="lg">
+                <h2 className="baslik1">Youtube video linkini aşağı yapıştırın</h2>
+                <InputGroup className="input-place" size="lg">
                     <Form.Control
                         aria-label="Large"
                         aria-describedby="inputGroup-sizing-sm"
                     />
                 </InputGroup>
-                <div className="button button-1">DOWNLOAD</div>
+                <div className="button button-download">İNDİR</div>
 
             </div>
         </>

@@ -14,23 +14,25 @@ N
 src/firebase.ts,2\6\263e55354801abdcb731502b97c900156d760531
 L
 src/components/Form/Form.tsx,b\a\ba8ad6bd8863363d95cbc177fc9f3e03b2037860
-A
-public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
 <
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
 =
 src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4
-F
-src/pages/Register.tsx,2\8\28689b818e0b1e4d848626aad45c531a86b9a55f
 N
 src/components/Input/Input.tsx,4\d\4d0eb4094676d5e01b68bb06004c88e151ff8674
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
-C
-src/pages/Login.css,e\8\e80ee9dbaa2ad6b6bfdf70137b3694c5623d3297
-B
-src/pages/home.css,2\d\2d49acfd84b615afd9e6b946e1fad87a53006a93
-B
-src/pages/Home.tsx,f\e\fee995f2e145c3f9ceb6f7fd48d1f22b3c792a95
 =
 src/index.tsx,5\a\5ab44fe33ca96299f51ad4778a73e425b92bf439
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+A
+public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
+;
+src/App.css,a\a\aa7165aefcf8ee3d73539e99ab007daf1aa18d8d
+I
+src/pages/Login/Login.css,6\2\6269896a093a4e8edaaf00b5a325bd33a0ec10e1
+O
+src/pages/Register/Register.css,d\5\d5a96f07b731bb585ca88fabf315e581cb7358cd
+G
+src/pages/Home/Home.tsx,5\2\520aaaf3bcf49e84fdfead5bdc2b3e40848b9d1d

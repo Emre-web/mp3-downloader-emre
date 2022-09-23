@@ -1,10 +1,9 @@
 import React, {useState, useMemo} from "react";
 import {Link} from "react-router-dom";
-import "../components/Input/input.css";
+import "../../components/Input/input.css";
 import "./Register.css";
-import {register} from "../firebase";
-import {Badge, Button, Form,Card,Container} from "react-bootstrap";
-
+import {register} from "../../firebase";
+import {Badge, Button, Form, Card, Container} from "react-bootstrap";
 
 
 const Register = () => {
@@ -28,43 +27,45 @@ const Register = () => {
             </ul>
 
             <div className="SignIn">
-                <Container className="d-flex align-items-center justify-content-center" style={{minHeight: "100vh"}}>
-                    <div className="w-100 custom-card" style={{maxWidth: "400px"}}>
-                <Card>
-                    <Card.Body>
-                <Form className="Form">
-                    <h2 className="SignInTitle">Sıgn In</h2>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email"
-                                      onChange={(e) => setEmailAddress(e.target.value)}/>
-                        <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
-                        </Form.Text>
-                    </Form.Group>
-                    {!isValidEmailAddress && emailAddress !== "" &&
-                        <Badge>Please Enter a Valid Email Address!</Badge>}
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password"
-                                      onChange={(e) => setPassword(e.target.value)}/>
-                        <Form.Text className="text-muted">
-                            Your password must contain uppercase, lowercase, numbers and symbols.
-                        </Form.Text>
-                    </Form.Group>
-                    {!isValidPassword && passwordLogin !== "" &&
-                        <Badge>Please Enter a Valid Password!</Badge>}
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Button disabled={!isValidEmailAddress} className="w-100 mt-4 custom-button" type="submit">Kayıt Ol</Button>
-                    </Form.Group>
-                </Form>
-                    </Card.Body>
-                    <Link to="Login" className="girisYap" >
-                        <div className="w-100 text-center mt-2">
-                            Already have an account ? Log In
-                        </div>
-                    </Link>
-                </Card>
+                <Container className="d-flex align-items-center justify-content-center kayit-ol-container">
+                    <div className="w-100 kayit-ol-div">
+                        <Card>
+                            <Card.Body>
+                                <Form className="Form">
+                                    <h2 className="SignInTitle">Kayıt Ol</h2>
+                                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                                        <Form.Label>Email adresi</Form.Label>
+                                        <Form.Control type="email" placeholder="Email girin"
+                                                      onChange={(e) => setEmailAddress(e.target.value)}
+                                        />
+                                        <Form.Text className="text-muted">
+                                            E-postanızı asla başkalarıyla paylaşmayacağız.
+                                        </Form.Text>
+                                    </Form.Group>
+                                    {!isValidEmailAddress && emailAddress !== "" &&
+                                        <Badge>Lütfen geçerli bir email adresi giriniz!</Badge>}
+                                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                                        <Form.Label>Parola</Form.Label>
+                                        <Form.Control type="password" placeholder="Parola"
+                                                      onChange={(e) => setPassword(e.target.value)}/>
+                                        <Form.Text className="text-muted">
+                                            Parolanız büyük harf, küçük harf, sayı ve sembol içermelidir.
+                                        </Form.Text>
+                                    </Form.Group>
+                                    {!isValidPassword && passwordLogin !== "" &&
+                                        <Badge>Lütfen geçerli bir parola giriniz!</Badge>}
+                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                        <Button disabled={!isValidEmailAddress} className="w-100 mt-4 kayit-ol-buton"
+                                                type="submit">Kayıt Ol</Button>
+                                    </Form.Group>
+                                </Form>
+                            </Card.Body>
+                            <Link to="Login" className="girisYap">
+                                <div className="w-100 text-center mt-2">
+                                    Zaten bir hesabın var mı? O halde giriş yap
+                                </div>
+                            </Link>
+                        </Card>
 
                     </div>
                 </Container>

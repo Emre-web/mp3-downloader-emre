@@ -1,11 +1,24 @@
-.LoginForm{
+.LoginForm {
     margin-top: 200px;
     margin-left: 470px;
     display: inline-block;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
 }
 
-.custom-card{
+.custom-card-container {
+    min-height: 100vh;
+}
+
+.custom-card {
     box-shadow: 0 0 10px 0 black;
+    max-width: 400px;
+}
+
+.girisYap {
+    color: white;
+}
+
+.giris-yap-buton:hover {
+    background-color: black !important;
 }

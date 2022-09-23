@@ -1,34 +1,54 @@
-import React from 'react';
-import {Badge, Card, Button, Form, Container} from "react-bootstrap";
+import React, {useState} from 'react';
+import {Card, Button, Form, Container} from "react-bootstrap";
 import "./Login.css";
 import {Link, useNavigate} from "react-router-dom";
 
 function Login() {
+
+    const [email, setEmail] = useState({email: ''})
+    const [pass, setPass] = useState({pass: ''})
+
+    const handleEmailChange = (e: React.ChangeEvent<any>) => {
+        //   setEmail(e.target.value)
+        if (e.target.type === "email") {
+            setEmail({email: e.target.value});
+            console.log(email);
+        }
+    }
+    const handlePasswordChange = (e: React.ChangeEvent<any>) => {
+        if (e.target.type === "password") {
+            setPass({pass: e.target.value});
+            console.log(pass);
+        }
+    }
+
     const navigate = useNavigate();
     return (
         <>
-            <Container className="d-flex align-items-center justify-content-center" style={{minHeight: "100vh"}}>
-                <div className="w-100 custom-card" style={{maxWidth: "400px"}}>
+            <Container className="d-flex align-items-center justify-content-center custom-card-container">
+                <div className="w-100 custom-card">
                     <Card>
                         <Card.Body>
-                            <h2 className="text-center mb-4">Log In</h2>
+                            <h2 className="text-center mb-4">Giriş Yap</h2>
                             <Form>
                                 <Form.Group id="email">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" required/>
+                                    <Form.Control type="email" required onChange={handleEmailChange}/>
                                 </Form.Group>
                                 <Form.Group id="password">
-                                    <Form.Label>Password</Form.Label>
-                                    <Form.Control type="password" required/><br/>
+                                    <Form.Label>Parola</Form.Label>
+                                    <Form.Control type="password" required onChange={handlePasswordChange}/><br/>
                                     <Form.Check type="checkbox" label="Beni hatırla"/>
                                 </Form.Group>
-                                <Button className="w-100 mt-4" type="submit"> <Link to="Profile">Log In</Link></Button>
+                                <Button className="w-100 mt-4 giris-yap-buton" type="submit">Giriş
+                                    Yap</Button>
                             </Form>
                         </Card.Body>
-                        <li onClick={() => navigate(-1)} className="girisYap">
+                        <li onClick={() => navigate(-1)}>
                             <div className="w-100 text-center mt-2">
-                                <Link to={""} style={{textDecoration: "none"}}>Already have'nt an account ? Sign
-                                    In</Link>
+                                <Link to={""}>
+                                    Bir hesabın yok mu? O halde kayıt ol
+                                </Link>
                             </div>
                         </li>
                     </Card>
