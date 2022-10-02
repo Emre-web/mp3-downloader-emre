@@ -3,16 +3,19 @@ import "./profile.css";
 import {Nav, Navbar, Container, ListGroup} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
-
 function Profile() {
+    const handleLogout = () => {
+
+    }
+
     return (
         <div className="custom-navbar">
             <Navbar>
                 <Container>
                     <Nav className="me-auto">
-                        <Nav.Link href="/">Anasayfa</Nav.Link>
+                        <Link to="/">Anasayfa</Link>
                     </Nav>
-                    <Nav.Link href="#">Çıkış Yap</Nav.Link>
+                    <span onClick={handleLogout}>Çıkış Yap</span>
                 </Container>
             </Navbar>
             <div className="container">

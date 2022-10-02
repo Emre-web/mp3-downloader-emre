@@ -3,14 +3,6 @@
     text-align: center;
 }
 
-.custom-navbar {
-    text-decoration: none;
-    height: 75px;
-    background-color: #ffcccc;
-    box-shadow: 0 0 10px 0 black;
-    font-size: 25px;
-}
-
 .input-place {
     box-shadow: 0 0 10px 0 black;
     border-radius: 10px;
