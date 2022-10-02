@@ -2,7 +2,6 @@ import React, {useState, useMemo} from "react";
 import {Link} from "react-router-dom";
 import "../../components/Input/input.css";
 import "./Register.css";
-import {register} from "../../firebase";
 import {Badge, Button, Form, Card, Container} from "react-bootstrap";
 
 
@@ -17,7 +16,18 @@ const Register = () => {
         return /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/.test(passwordLogin)
     }, [passwordLogin])
 
+    const [registerEmail, setRegisterEmail] = useState("");
+    const [registerPassword, setRegisterPassword] = useState("");
 
+    const register = async () => {
+
+    }
+    const login = async () => {
+
+    }
+    const logout = async () => {
+
+    }
     return (
         <>
             <ul className="back">

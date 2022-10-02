@@ -16,20 +16,14 @@
     border-radius: 10px;
 }
 
-.buton {
-    background-color: red;
-    color: white;
+.baslik-link {
+    margin-bottom: 40px;
 }
 
-.buton:hover {
-    cursor: pointer;
-    color: white;
-    background-color: darkgray;
-}
 
 .button {
     text-align: center;
-    width: 270px;
+    width: 400px;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 20px;
@@ -43,6 +37,9 @@
 }
 
 .button-download {
+    font-size: 20px;
+    font-size: x-large;
+    margin-top: 40px;
     background-color: transparent;
     border: 3px solid #0dcaf0;
     border-radius: 50px;

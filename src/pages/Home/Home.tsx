@@ -27,7 +27,7 @@ function Home() {
                 </div>
             </nav>
             <div className="col-md-7 container-fluid input-area">
-                <h2 className="baslik1">Youtube video linkini aşağı yapıştırın</h2>
+                <h2 className="baslik-link">Youtube video linkini aşağı yapıştırın</h2>
                 <InputGroup className="input-place" size="lg">
                     <Form.Control
                         aria-label="Large"
